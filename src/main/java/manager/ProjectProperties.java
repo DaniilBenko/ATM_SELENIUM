@@ -7,6 +7,7 @@ import java.util.Properties;
 public class ProjectProperties {
 
     private static Properties properties;
+    private static String propertiesPath = "src/main/resources/application.properties";
 
     static {
         init();
@@ -15,9 +16,9 @@ public class ProjectProperties {
     private static void init() {
         properties = new Properties();
         try {
-            properties.load(new FileInputStream("src/main/resources/application.properties"));
+            properties.load(new FileInputStream(propertiesPath));
         } catch (IOException e) {
-            e.printStackTrace();
+            throw new PropertiesNotFoundException("Properties Not Found");
         }
     }
 

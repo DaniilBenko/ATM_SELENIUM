@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.concurrent.TimeUnit;
 
-public class Loginmain extends  AbstractPage{
+public class LoginMain extends  AbstractPage{
     @FindBy(xpath = "//*[@id=\"text\"]" )
     private WebElement signInButton;
 
@@ -21,13 +21,13 @@ public class Loginmain extends  AbstractPage{
     @FindBy(xpath = "//*[@id=\"passwordNext\"]/content/span" )
     private WebElement passwordNext;
 
-    public Loginmain() {
+    public LoginMain() {
         super();
     }
 
-    public Loginmain clickSignIn(){
+    public LoginMain clickSignIn(){
         signInButton.click();
-        return new Loginmain();
+        return new LoginMain();
     }
 
     public void enterLogin(String login){

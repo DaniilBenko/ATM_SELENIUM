@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 public class Subs extends AbstractPage {
 
     @FindBy(linkText = "videogamedunkey")
-    private WebElement channel ;
+    private WebElement channel;
 
     public Subs() {
         super();

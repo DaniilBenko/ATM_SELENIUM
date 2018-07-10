@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite2" verbose="1">
+    <listeners>
+        <listener class-name="test.TestListener"/>
+    </listeners>
+
+    <test name="Navigation">
+        <classes>
+            <class name="test.OpenSubsTest"/>
+            <class name="test.OpenHomeTest"/>
+        </classes>
+    </test>
+
+</suite>

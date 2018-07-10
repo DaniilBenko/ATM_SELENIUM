@@ -1,8 +1,6 @@
 package constants;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public enum Browsers {
     CHROME("webdriver.chrome.driver", "c:\\chromedriver.exe"),
@@ -20,10 +18,6 @@ public enum Browsers {
 
     public String getPath() {
         return path;
-    }
-
-    public WebDriver getDriver() {
-        return driver;
     }
 
     public String getKey() {
